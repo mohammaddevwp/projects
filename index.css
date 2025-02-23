@@ -1,0 +1,14 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff; /* تست با رنگ سفید */
+  color: #000000;
+  transition: all 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #1a202c; /* آبی تیره ملایم */
+  color: #ffffff;
+}

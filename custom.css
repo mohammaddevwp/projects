@@ -1,0 +1,322 @@
+/* src/styles/custom.css */
+
+/* انیمیشن‌ها و استایل‌های قبلی حفظ می‌شوند */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.chat-messages {
+  transition: background-color 0.3s ease;
+}
+
+.chat-header {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* تم تاریک */
+body {
+  background-color: #1a202c !important; /* آبی تیره ملایم (پیش‌فرض تاریک) */
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.bg-dark {
+  background-color: #2d3748 !important; /* خاکستری تیره ملایم */
+}
+
+.bg-primary {
+  background-color: #4a90e2 !important; /* آبی آسمانی نرم */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.bg-success {
+  background-color: #48bb78 !important; /* سبز ملایم */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.bg-danger {
+  background-color: #e53e3e !important; /* قرمز ملایم */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.border-secondary {
+  border-color: #4a5568 !important; /* خاکستری تیره ملایم */
+}
+
+.btn-primary {
+  background-color: #4a90e2 !important;
+  border-color: #4a90e2 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.btn-primary:hover {
+  background-color: #357abd !important; /* آبی تیره‌تر برای هاور */
+  border-color: #357abd !important;
+}
+
+.btn-success {
+  background-color: #48bb78 !important;
+  border-color: #48bb78 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.btn-success:hover {
+  background-color: #3c9a5f !important; /* سبز تیره‌تر برای هاور */
+  border-color: #3c9a5f !important;
+}
+
+.btn-danger {
+  background-color: #e53e3e !important;
+  border-color: #e53e3e !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.btn-danger:hover {
+  background-color: #c53030 !important;
+  border-color: #c53030 !important;
+}
+
+.btn-secondary {
+  background-color: #333 !important; /* خاکستری تیره GitHub */
+  border-color: #333 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.btn-secondary:hover {
+  background-color: #1a1a1a !important; /* خاکستری تیره‌تر برای هاور */
+  border-color: #1a1a1a !important;
+}
+
+.message.user-message {
+  background-color: #48bb78 !important; /* سبز ملایم برای پیام کاربر */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.message.bot-message {
+  background-color: #4a90e2 !important; /* آبی آسمانی نرم برای پیام ربات */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+.code-block {
+  background-color: #2d3748 !important;
+  border: 1px solid #4a5568 !important;
+  color: #ffffff !important;
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 14px !important;
+  white-space: pre !important;
+  line-height: 1.5 !important;
+  direction: ltr !important;
+  text-align: left !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  margin-top: 10px !important;
+  overflow-x: auto !important;
+}
+
+.file-name {
+  font-weight: bold !important;
+  font-size: 16px !important;
+  color: #4a90e2 !important;
+  margin-bottom: 5px !important;
+  text-align: left !important;
+}
+
+.code-copy-btn {
+  color: #4a90e2 !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 5px !important;
+  margin-left: 10px !important;
+  transition: color 0.3s ease !important;
+}
+
+.code-copy-btn:hover {
+  color: #357abd !important;
+}
+
+/* تم روشن */
+body.light-theme {
+  background-color: #f9fafb !important; /* سفید یخی بسیار ملایم */
+  color: #000000 !important; /* متن مشکی برای خوانایی */
+}
+
+body.light-theme .bg-dark {
+  background-color: #ffffff !important; /* سفید خالص برای پس‌زمینه تیره */
+  border: 1px solid #edf2f7 !important; /* خاکستری روشن برای مرز */
+  color: #000000 !important; /* متن مشکی برای خوانایی */
+}
+
+body.light-theme .bg-primary {
+  background-color: #4299e1 !important; /* آبی ملایم و روشن */
+  border-color: #4299e1 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .bg-success {
+  background-color: #38a169 !important; /* سبز روشن ملایم */
+  border-color: #38a169 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .bg-danger {
+  background-color: #e53e3e !important; /* قرمز ملایم */
+  border-color: #e53e3e !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .border-secondary {
+  border-color: #edf2f7 !important; /* خاکستری روشن بسیار ملایم */
+}
+
+body.light-theme .btn-primary {
+  background-color: #4299e1 !important;
+  border-color: #4299e1 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .btn-primary:hover {
+  background-color: #3182ce !important; /* آبی متوسط ملایم */
+  border-color: #3182ce !important;
+}
+
+body.light-theme .btn-success {
+  background-color: #38a169 !important;
+  border-color: #38a169 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .btn-success:hover {
+  background-color: #2f855a !important; /* سبز تیره‌تر برای هاور */
+  border-color: #2f855a !important;
+}
+
+body.light-theme .btn-danger {
+  background-color: #e53e3e !important;
+  border-color: #e53e3e !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .btn-danger:hover {
+  background-color: #c53030 !important;
+  border-color: #c53030 !important;
+}
+
+body.light-theme .btn-secondary {
+  background-color: #a0aec0 !important; /* خاکستری روشن GitHub */
+  border-color: #a0aec0 !important;
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .btn-secondary:hover {
+  background-color: #718096 !important; /* خاکستری تیره‌تر برای هاور */
+  border-color: #718096 !important;
+}
+
+body.light-theme .message.user-message {
+  background-color: #38a169 !important; /* سبز روشن برای پیام کاربر */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .message.bot-message {
+  background-color: #4299e1 !important; /* آبی ملایم برای پیام ربات */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .form-control,
+body.light-theme .form-control:focus {
+  background-color: #ffffff !important; /* پس‌زمینه سفید برای اینپوت‌ها */
+  border-color: #edf2f7 !important; /* مرز خاکستری روشن */
+  color: #000000 !important; /* متن مشکی برای خوانایی */
+}
+
+body.light-theme .form-control::placeholder {
+  color: #718096 !important; /* رنگ پلاسی‌هولدر خاکستری ملایم */
+}
+
+body.light-theme .chat-header {
+  background-color: #4299e1 !important; /* آبی ملایم برای هدر */
+  color: #ffffff !important; /* متن سفید برای کنتراست بهتر */
+}
+
+body.light-theme .chat-messages {
+  background-color: #ffffff !important; /* سفید خالص برای بخش پیام‌ها */
+  color: #000000 !important; /* متن مشکی برای خوانایی */
+}
+
+body.light-theme .loading {
+  background-color: #edf2f7 !important; /* خاکستری روشن برای لودینگ */
+  color: #000000 !important; /* متن مشکی برای خوانایی */
+}
+
+body.light-theme i.fa {
+  color: #000000 !important; /* رنگ مشکی برای آیکون‌ها در تم روشن */
+}
+
+body.light-theme .code-block {
+  background-color: #f9fafb !important;
+  border-color: #edf2f7 !important;
+  color: #000000 !important;
+}
+
+body.light-theme .file-name {
+  color: #4299e1 !important;
+}
+
+body.light-theme .code-copy-btn {
+  color: #4299e1 !important;
+}
+
+body.light-theme .code-copy-btn:hover {
+  color: #3182ce !important;
+}
+
+/* سایر استایل‌های قبلی حفظ می‌شوند */
+.alert {
+  animation: fadeInDown 0.5s ease-out;
+}
